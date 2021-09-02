@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <section id="tela">
+            <div id="display">
+                <p id="numText"></p>
+                <p id="resultText"></p>
+            </div>
+        </section>
+        <section id="botoes">
+            <div class="botao" onclick="calcular(1)">C</div>
+            <div class="botao" onclick="calcular(18)">←</div>
+            <div class="botao" onclick="calcular(2)">/</div>
+            <div class="botao" onclick="calcular(3)">*</div>
+            <div class="botao" onclick="calcular(5)">7</div>
+            <div class="botao" onclick="calcular(6)">8</div>
+            <div class="botao" onclick="calcular(7)">9</div>
+            <div class="botao" onclick="calcular(8)">+</div>
+            <div class="botao" onclick="calcular(9)">4</div>
+            <div class="botao" onclick="calcular(10)">5</div>
+            <div class="botao" onclick="calcular(11)">6</div>
+            <div class="botao" onclick="calcular(4)">-</div>
+            <div class="botao" onclick="calcular(13)">1</div>
+            <div class="botao" onclick="calcular(14)">2</div>
+            <div class="botao" onclick="calcular(15)">3</div>
+            <div class="botao zero" onclick="calcular(16)">0</div>
+            <div class="botao" onclick="calcular(12)">.</div>
+            <div class="botao igual" onclick="calcular(17)">=</div>
+        </section>
+    </main>
+
+    <script>
+        
+
+        function resultado(){
+
+            var passada = document.getElementById("contaPassada")
+            var numero = document.getElementById("numText");
+            var result = document.getElementById("resultText")
+
+            result.innerHTML = `= ${eval(numero.innerHTML)}`
+            numero.innerHTML = ''
+    
+    
+        }
+    </script>
+</body>
+</html>
