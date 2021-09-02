@@ -12,6 +12,7 @@
     <main>
         <section id="tela">
             <div id="display">
+                <p id="contaPassada"></p>
                 <p id="numText"></p>
                 <p id="resultText"></p>
             </div>
@@ -46,9 +47,12 @@
             var passada = document.getElementById("contaPassada")
             var numero = document.getElementById("numText");
             var result = document.getElementById("resultText")
-
+            
             result.innerHTML = `= ${eval(numero.innerHTML)}`
+            passada.innerHTML = numero.innerHTML
             numero.innerHTML = ''
+            
+            
     
     
         }

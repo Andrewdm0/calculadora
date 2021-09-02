@@ -1,9 +1,11 @@
 function calcular(fun){
     switch (fun) {
         case 1:
+            var passada = document.getElementById("contaPassada")
             numText.innerHTML = ''
             resultText.innerHTML = ''
             passada.innerHTML = ''
+            
             break;
         case 2:
             numText.innerHTML += '/'
